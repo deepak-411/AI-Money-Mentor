@@ -146,7 +146,7 @@ export default function FirePlanner() {
           <CardContent><p>{result.monthlyRoadmapSummary}</p></CardContent>
         </Card>
 
-        <Card variant="destructive" className="bg-destructive/10 border-destructive/50">
+        <Card className="bg-destructive/10 border-destructive/50">
             <CardHeader><CardTitle>Disclaimer</CardTitle></CardHeader>
             <CardContent><p className="text-sm text-destructive-foreground">{result.disclaimer}</p></CardContent>
         </Card>

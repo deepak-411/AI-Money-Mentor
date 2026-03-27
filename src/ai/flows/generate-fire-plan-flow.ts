@@ -81,8 +81,8 @@ User's current financial situation:
 User's retirement goals:
 - Desired Retirement Age: {{{retirementAge}}} years
 - Target Monthly Corpus (today's value, inflation-adjusted): ₹{{{targetMonthlyCorpusTodayValue}}}
-- Expected Annual Inflation Rate: {{expectedInflationRate format='0.00%'}}
-- Expected Annual Investment Return Rate: {{expectedInvestmentReturnRate format='0.00%'}}
+- Expected Annual Inflation Rate: {{{expectedInflationRate}}}
+- Expected Annual Investment Return Rate: {{{expectedInvestmentReturnRate}}}
 
 Generate the FIRE plan following these steps and format the output as per the provided schema:
 
