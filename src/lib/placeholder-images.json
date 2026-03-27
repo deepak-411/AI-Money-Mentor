@@ -1,3 +1,22 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "welcome-bg",
+      "description": "Abstract background for welcome page",
+      "imageUrl": "https://picsum.photos/seed/welcome/1920/1080",
+      "imageHint": "abstract finance"
+    },
+    {
+      "id": "login-bg",
+      "description": "Abstract background for login page",
+      "imageUrl": "https://picsum.photos/seed/login/1200/800",
+      "imageHint": "modern office"
+    },
+    {
+      "id": "user-avatar",
+      "description": "Placeholder for user avatar",
+      "imageUrl": "https://picsum.photos/seed/avatar/200/200",
+      "imageHint": "profile portrait"
+    }
+  ]
 }
