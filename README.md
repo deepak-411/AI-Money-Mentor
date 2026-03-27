@@ -167,51 +167,39 @@ Outputs:
 ###  Agent Workflow
 
 
----
-```markdown
 
-flowchart TD
-    A[User] --> B[Input Collection]
-    B --> C[Financial Processing Engine]
-    C --> D[Tax Engine]
-    C --> E[Investment Engine]
-    D --> F[AI Decision Layer]
-    E --> F
-    F --> G[Final Output UI]
+---
 
 ### Level 1
 
       +------------------+
-| User |
-+--------+---------+
-|
-v
-+--------+----------+
-| Input Collection |
-+--------+----------+
-|
-v
-+--------+----------------------+
-| Financial Processing Engine |
-+--------+----------+-----------+
-| |
-v v
-Tax Engine Investment Engine
-| |
-+----+-----+
-|
-v
-+--------+--------+
-| AI Decision |
-| Layer |
-+--------+--------+
-|
-v
-+--------+--------+
-| Final Output UI |
-+-----------------+
-
- ```mermaid 
+      |      User        |
+      +--------+---------+
+               |
+               v
+     +---------+----------+
+     |  Input Collection  |
+     +---------+----------+
+               |
+               v
+ +-------------+-------------+
+ | Financial Processing Engine|
+ +------+------+-------------+
+        |      |
+        v      v
+ Tax Engine   Investment Engine
+        |      |
+        +--+---+
+           |
+           v
+  +--------+--------+
+  | AI Decision Layer|
+  +--------+--------+
+           |
+           v
+  +--------+--------+
+  | Final Output UI |
+  +-----------------+ 
 ---
 
 ##  Tech Stack
