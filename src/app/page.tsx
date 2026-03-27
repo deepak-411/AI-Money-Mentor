@@ -40,8 +40,8 @@ export default function Home() {
             </Link>
           </Button>
         </div>
-        <div className="absolute bottom-4 left-4 right-4 text-center text-xs text-slate-400 animate-in fade-in duration-1000 delay-700">
-          <p>Presenting AI Money Mentor</p>
+        <div className="absolute bottom-4 left-4 right-4 text-center text-sm text-slate-300 animate-in fade-in duration-1000 delay-700">
+          <p>All rights reserved © 2026 Deepak Kumar.</p>
         </div>
       </div>
     </main>
