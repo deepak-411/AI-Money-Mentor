@@ -200,9 +200,8 @@ Outputs:
   | Final Output UI |
   +-----------------+
 
-
   
----
+
 
 ##  Tech Stack
 
