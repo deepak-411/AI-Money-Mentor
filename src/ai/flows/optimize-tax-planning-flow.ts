@@ -140,7 +140,7 @@ Your tasks are as follows:
     -   Its liquidity (low, medium, high)
     -   An estimated potential tax savings in Lakhs.
 
-Ensure your output adheres strictly to the `OptimizeTaxPlanningOutputSchema` structure, providing all fields, especially the step-by-step calculations for both regimes and the mandatory disclaimer.`
+Ensure your output adheres strictly to the 'OptimizeTaxPlanningOutputSchema' structure, providing all fields, especially the step-by-step calculations for both regimes and the mandatory disclaimer.
 `,
 });
 
