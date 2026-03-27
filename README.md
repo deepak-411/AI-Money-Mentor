@@ -169,6 +169,16 @@ Outputs:
 
 ---
 ```markdown
+```mermaid
+flowchart TD
+    A[User] --> B[Input Collection]
+    B --> C[Financial Processing Engine]
+    C --> D[Tax Engine]
+    C --> E[Investment Engine]
+    D --> F[AI Decision Layer]
+    E --> F
+    F --> G[Final Output UI]
+
 ### Level 1
 
       +------------------+
