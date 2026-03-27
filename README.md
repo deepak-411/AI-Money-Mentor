@@ -169,7 +169,7 @@ Outputs:
 
 ---
 ```markdown
-```mermaid
+
 flowchart TD
     A[User] --> B[Input Collection]
     B --> C[Financial Processing Engine]
@@ -211,7 +211,7 @@ v
 | Final Output UI |
 +-----------------+
 
-  
+ ```mermaid 
 ---
 
 ##  Tech Stack
