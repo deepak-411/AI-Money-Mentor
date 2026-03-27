@@ -21,14 +21,14 @@ export default function Home() {
       )}
       <div className="absolute inset-0 bg-black/70 -z-10" />
       <div className="text-center p-4">
-        <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter animate-in fade-in slide-in-from-bottom-4 duration-1000">
+        <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter animate-in fade-in slide-in-from-bottom-4 duration-1000 bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent bg-200% animate-text-shimmer">
           ET Gen AI Hackathon 2026
         </h1>
         <div className="mt-8 space-y-4 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300">
-            <p className="max-w-3xl mx-auto text-2xl md:text-3xl text-slate-200 font-headline">
+            <p className="max-w-3xl mx-auto text-2xl md:text-3xl text-slate-200 font-headline bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent bg-200% animate-text-shimmer">
               Team: ERROR404
             </p>
-            <p className="max-w-3xl mx-auto text-lg md:text-xl text-slate-300">
+            <p className="max-w-3xl mx-auto text-lg md:text-xl text-slate-300 bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent bg-200% animate-text-shimmer">
               Team Leader: Deepak Kumar
             </p>
         </div>

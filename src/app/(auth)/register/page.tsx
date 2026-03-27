@@ -15,16 +15,32 @@ import { useAuth } from "@/context/AuthContext";
 import { DollarSign, Loader2 } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
 
 export default function RegisterPage() {
   const { login } = useAuth();
   const [isLoading, setIsLoading] = useState(false);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const { toast } = useToast();
 
   const handleRegister = () => {
+    if (!name || !email || !password) {
+      toast({
+        title: "Registration Failed",
+        description: "Please fill in all fields.",
+        variant: "destructive",
+      });
+      return;
+    }
     setIsLoading(true);
     // In a real app, you'd do API calls here.
     // We'll simulate a successful registration and auto-login.
-    login();
+    setTimeout(() => {
+      login();
+      setIsLoading(false);
+    }, 1000);
   };
   return (
     <Card className="w-full">
@@ -39,15 +55,34 @@ export default function RegisterPage() {
         <div className="space-y-4">
           <div className="space-y-2">
             <Label htmlFor="name">Name</Label>
-            <Input id="name" placeholder="Deepak Kumar" required />
+            <Input
+              id="name"
+              placeholder="Deepak Kumar"
+              required
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
           </div>
           <div className="space-y-2">
             <Label htmlFor="email">Email</Label>
-            <Input id="email" type="email" placeholder="m@example.com" required />
+            <Input
+              id="email"
+              type="email"
+              placeholder="m@example.com"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
           </div>
           <div className="space-y-2">
             <Label htmlFor="password">Password</Label>
-            <Input id="password" type="password" required />
+            <Input
+              id="password"
+              type="password"
+              required
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
           </div>
         </div>
       </CardContent>
