@@ -158,7 +158,7 @@ export default function TaxOptimizer() {
               <FormField control={form.control} name="hraComponentLacs" render={({ field }) => <FormItem><FormLabel>HRA Component (in Lacs)</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>} />
               <FormField control={form.control} name="investments80CLacs" render={({ field }) => <FormItem><FormLabel>80C Investments (in Lacs)</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>} />
               <FormField control={form.control} name="npsContributionLacs" render={({ field }) => <FormItem><FormLabel>NPS Contribution (in Lacs)</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>} />
-              <FormField control={form.control} name="homeLoanInterestLacs" render={({ field }) => <FormItem><FormLabel>Home Loan Interest (in Lacs)</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormMessage /></FormItem>} />
+              <FormField control={form.control} name="homeLoanInterestLacs" render={({ field }) => <FormItem><FormLabel>Home Loan Interest (in Lacs)</FormLabel><FormControl><Input type="number" {...field} /></FormControl><FormMessage /></FormItem>} />
             </div>
             <div className="grid md:grid-cols-2 gap-8">
                 <FormField control={form.control} name="riskProfile" render={({ field }) => (
