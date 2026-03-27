@@ -26,7 +26,7 @@ export default function RegisterPage() {
         <div className="space-y-4">
           <div className="space-y-2">
             <Label htmlFor="name">Name</Label>
-            <Input id="name" placeholder="Deepak Kumar" required />
+            <Input id="name" placeholder="Team ERROR404" required />
           </div>
           <div className="space-y-2">
             <Label htmlFor="email">Email</Label>
