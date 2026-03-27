@@ -1,8 +1,5 @@
 #  AI MONEY MENTOR  
 ### ET Gen AI Hackathon 2026  
-**Team Name:** ERROR404  
-**Team Leader:** Deepak Kumar  
-
 ---
 
 ##  Overview
