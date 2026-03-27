@@ -1,3 +1,5 @@
+'use client';
+
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -9,10 +11,21 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { DollarSign } from "lucide-react";
+import { useAuth } from "@/context/AuthContext";
+import { DollarSign, Loader2 } from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function RegisterPage() {
+  const { login } = useAuth();
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleRegister = () => {
+    setIsLoading(true);
+    // In a real app, you'd do API calls here.
+    // We'll simulate a successful registration and auto-login.
+    login();
+  };
   return (
     <Card className="w-full">
       <CardHeader className="text-center">
@@ -39,8 +52,8 @@ export default function RegisterPage() {
         </div>
       </CardContent>
       <CardFooter className="flex flex-col gap-4">
-        <Button className="w-full" asChild>
-          <Link href="/dashboard">Create Account</Link>
+        <Button className="w-full" onClick={handleRegister} disabled={isLoading}>
+          {isLoading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : 'Create Account'}
         </Button>
         <p className="text-sm text-center text-muted-foreground">
           Already have an account?{" "}

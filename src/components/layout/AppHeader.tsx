@@ -1,3 +1,5 @@
+'use client';
+
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Button } from "@/components/ui/button";
 import {
@@ -12,9 +14,12 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { DollarSign } from "lucide-react";
 import Link from "next/link";
+import { useAuth } from "@/context/AuthContext";
 
 export default function AppHeader() {
   const userAvatar = PlaceHolderImages.find((p) => p.id === "user-avatar");
+  const { logout } = useAuth();
+  
   return (
     <header className="sticky top-0 z-10 flex h-16 items-center gap-4 border-b bg-background/80 backdrop-blur-sm px-4 md:px-6">
        <div className="md:hidden">
@@ -49,8 +54,8 @@ export default function AppHeader() {
             <DropdownMenuItem>Profile</DropdownMenuItem>
             <DropdownMenuItem>Settings</DropdownMenuItem>
             <DropdownMenuSeparator />
-            <DropdownMenuItem asChild>
-                <Link href="/login">Logout</Link>
+            <DropdownMenuItem onClick={logout} className="cursor-pointer">
+                Logout
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
