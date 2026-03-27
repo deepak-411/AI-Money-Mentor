@@ -38,7 +38,7 @@ export default function AppHeader() {
             <Button variant="secondary" size="icon" className="rounded-full">
               <Avatar>
                 {userAvatar && <AvatarImage src={userAvatar.imageUrl} alt="User Avatar" data-ai-hint={userAvatar.imageHint}/>}
-                <AvatarFallback>E4</AvatarFallback>
+                <AvatarFallback>DK</AvatarFallback>
               </Avatar>
               <span className="sr-only">Toggle user menu</span>
             </Button>

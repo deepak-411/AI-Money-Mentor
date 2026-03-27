@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "welcome-bg",
-      "description": "Financial planning and investment growth background",
-      "imageUrl": "https://picsum.photos/seed/finance-growth/1920/1080",
-      "imageHint": "finance growth"
+      "description": "Abstract background for hackathon project",
+      "imageUrl": "https://picsum.photos/seed/hackathon-ai/1920/1080",
+      "imageHint": "hackathon code"
     },
     {
       "id": "login-bg",
