@@ -34,7 +34,7 @@ const DimensionScoreSchema = z.object({
 const GenerateMoneyHealthScoreOutputSchema = z.object({
   overallScore: z.number().int().min(0).max(100).describe('The overall financial wellness score, ranging from 0 to 100.'),
   dimensions: z.object({
-    emergencyPrepared preparedness: DimensionScoreSchema.describe('Score and insights for emergency preparedness.'),
+    emergencyPreparedness: DimensionScoreSchema.describe('Score and insights for emergency preparedness.'),
     insuranceCoverage: DimensionScoreSchema.describe('Score and insights for insurance coverage.'),
     investmentDiversification: DimensionScoreSchema.describe('Score and insights for investment diversification.'),
     debtHealth: DimensionScoreSchema.describe('Score and insights for debt health.'),
