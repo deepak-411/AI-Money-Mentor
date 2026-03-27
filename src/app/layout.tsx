@@ -4,8 +4,8 @@ import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'ET Gen AI HACKATHON 2026 - ERROR404',
-  description: 'Submission for ET Gen AI Hackathon 2026 by Team ERROR404.',
+  title: 'AI Money Mentor',
+  description: 'Your personalized AI-powered financial advisor. Get insights on your investments, optimize your taxes, and plan for your financial independence.',
 };
 
 export default function RootLayout({

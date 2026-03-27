@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "welcome-bg",
-      "description": "Abstract background for welcome page",
-      "imageUrl": "https://picsum.photos/seed/welcome/1920/1080",
-      "imageHint": "abstract finance"
+      "description": "Financial planning and investment growth background",
+      "imageUrl": "https://picsum.photos/seed/finance-growth/1920/1080",
+      "imageHint": "finance growth"
     },
     {
       "id": "login-bg",
